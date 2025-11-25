@@ -427,6 +427,14 @@ input:valid~label span {
 
 
 /* Cart Styles */
+/* //View cart  */
+#viewCart {
+  margin-left: 90%;
+  /* position: ; */
+  background: chocolate;
+  /* z-index: 10001; */
+  border: 5px solid rgba(207, 207, 207, 0.623);
+}
 .cart {
   position: fixed;
   top: 0;
