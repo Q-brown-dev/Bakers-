@@ -89,7 +89,7 @@ function addToCart(name, price, image) {
 
   //Update total
   total += price;
-  document.getElementById("total").textContent = `Total: ₦${total}`;
+  document.getElementById("total").textContent = `Total: $${total}`;
 
   //Handle remove button 
   itemDiv.querySelector(".remove-btn").addEventListener("click", () => {
