@@ -199,6 +199,7 @@ header {
   border-radius: 6px;
   margin-right: 12px;
   background: rgb(233, 123, 44);
+  cursor: pointer;
 }
 
 .square-inner {
@@ -280,14 +281,26 @@ span {
 }
 
 .fa-brands {
-  color: #fff;
+  color: chocolate;
   font-size: 40px;
 }
+
 
 .icons {
   gap: 410px;
 }
-
+.choco {
+  font-size: 1rem;
+  color: chocolate;
+  /* color: rgb(110, 66, 8); */
+}
+h6 {
+  font-size: 1.2rem;
+  color: chocolate;
+}
+.text {
+  color: wheat;
+}
 label {
   pointer-events: none;
   color: white;
@@ -350,6 +363,7 @@ input:valid~label span {
   width: 900px;
   margin-left: 300px;
   margin-top: 20px;
+  margin-bottom: 13px;
 }
 
 #formContainer {
@@ -404,3 +418,98 @@ input:valid~label span {
   outline: none;
   background: rgb(77, 39, 12);
 }
+
+/* Cart */
+/* cart */
+.open-cart {
+  cursor: pointer;
+}
+
+
+.cartt {
+  transition: 0.6s ease-in-out;
+  color: #ccc;
+}
+
+.dark .cart {
+  background: #141414;
+  color: white;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  overflow-y: auto;
+  transition: right 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.cart.open {
+  right: 0;
+}
+
+.cart img {
+  width: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#cart-items {
+  margin: 20px 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* 
+.button {
+  background-color: #222423;
+  width: 120px;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+/* .active {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: slideDown 1s ease forwards;
+}
+
+.active h1 {
+  font-size: 16px;
+} */
