@@ -31,6 +31,20 @@
 
 
         </header>
+        <div class="cart" id="cart">
+            <div class="cartt">
+                <a href="#">Cart (<span id="cart-count">0 </span>)&#128722;</a>
+            </div>
+            <h2>Your Cart</h2>
+
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button class="button" onclick="closeCart()">Close cart</button>
+        </div>
+
+        <div class="cart-container" id="cart-container">
+            <div class="cart-item"></div>
+        </div>
 
 
         <section class="hero">
@@ -87,7 +101,7 @@
 
                 <div class="second-role">
                     <h3>72kg</h3>
-                    <button class="cart-btn">Add</button>
+                    <button class="cart-btn" onclick="addTocart('Whale', 3455, './🧁/wap (1).png')">Add</button>
                 </div>
             </div>
         </div>
@@ -102,7 +116,7 @@
 
                 <div class="second-role">
                     <h3>72kg</h3>
-                    <button class="cart-btn">Add</button>
+                    <button class="cart-btn" onclick="addTocart('Whale', 3455, './🧁/bg4 (3).jpg')">Add</button>
                 </div>
             </div>
         </div>
@@ -117,7 +131,7 @@
 
                 <div class="second-role">
                     <h3>72kg</h3>
-                    <button class="cart-btn">Add</button>
+                    <button class="cart-btn" onclick="addTocart('Whale', 3455, './🧁/wap (1).webp')">Add</button>
                 </div>
             </div>
         </div>
@@ -132,7 +146,7 @@
 
                 <div class="second-role">
                     <h3>72kg</h3>
-                    <button class="cart-btn">Add</button>
+                    <button class="cart-btn" onclick="addTocart('Whale', 3455, './🧁/bg (3).jpg')">Add</button>
                 </div>
             </div>
         </div>
@@ -147,7 +161,8 @@
 
                 <div class="second-role">
                     <h3>72kg</h3>
-                    <button class="cart-btn">Add</button>
+                    <button class="cart-btn"
+                        onclick="addTocart('Whale', 3455, './🧁/chalk bakery (1).jpg')">Add</button>
                 </div>
             </div>
         </div>
@@ -162,7 +177,8 @@
 
                 <div class="second-role">
                     <h3>72kg</h3>
-                    <button class="cart-btn">Add</button>
+                    <button class="cart-btn"
+                        onclick="addTocart('Whale', 3455, './🧁/chalk bakery (2).jpg')">Add</button>
                 </div>
             </div>
         </div>
@@ -177,7 +193,7 @@
 
                 <div class="second-role">
                     <h3>72kg</h3>
-                    <button class="cart-btn">Add</button>
+                    <button class="cart-btn" onclick="addTocart('Whale', 3455, './🧁/wap (1).png')">Add</button>
                 </div>
             </div>
         </div>
@@ -192,7 +208,7 @@
 
                 <div class="second-role">
                     <h3>72kg</h3>
-                    <button class="cart-btn">Add</button>
+                    <button class="cart-btn" onclick="addTocart('Whale', 3455, './🧁/wap (1).png')">Add</button>
                 </div>
             </div>
         </div>
@@ -225,13 +241,13 @@
 
             <div class="footer-c">
                 <h2>Recent News</h2> <br>
-                <a class="link" href="#">
+                <a class="link" href="About-us.html">
                     <p>About Us</p>
                 </a>
                 <a class="link" href="#">
                     <p>Services</p>
                 </a>
-                <a class="link" href="#">
+                <a class="link" href="contact.html">
                     <p>Get In touch</p>
                 </a>
             </div>
@@ -266,6 +282,8 @@
         <br>
         <br>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
