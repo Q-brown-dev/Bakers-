@@ -1,3 +1,24 @@
+//Media size 
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+
+menuBtn.addEventListener("click", () => {
+  sideMenu.classList.toggle("open");
+});
+
+// Header interaction
+const header = document.getElementById("header");
+if (window.addEventListener("scroll", () => {
+  header.classList.add("active")
+})) {
+
+}
+
+window.addEventListener("scroll", () => {
+  setTimeout(() => {
+    document.getElementById("header").classList.add("fade-out")
+  }, 5000);
+})
 const btnSub = document.querySelector(".btn-sub");
 btnSub.addEventListener("click", () => {
   alert(" Thank for subcribing👍💖💖")
@@ -16,12 +37,8 @@ const cartbtn7 = document.querySelector(".cart-btn7");
 const cartbtn8 = document.querySelector(".cart-btn8");
 cartbtn.addEventListener("click", () => {
   cartbtn.textContent = added;
-  
+
 })
-cartbtn.setTimeout(() => {
-    cartbtn.textContent = added;
-    
-  }, 5000);
 cartbtn2.addEventListener("click", () => {
   cartbtn2.textContent = added;
 })
