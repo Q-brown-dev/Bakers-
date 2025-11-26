@@ -11,7 +11,7 @@
 
 <body>
     <main id="main">
-        <header>
+        <header id="header">
             <div class="logo">Baker</div>
             <div class="nav-container">
                 <li><a href="index.html" style="color: orange;">Home</a></li>
@@ -31,11 +31,11 @@
 
 
         </header>
+        <div class="container-for-cart-view-btn">
+            <button id="viewCart">View cart&#128722;</button>
+        </div>
 
         <div class="cart" id="cart">
-            <div class="cartt">
-                <a href="#">Cart (<span id="cart-count">0 </span>)&#128722;</a>
-            </div>
             <h2>Your Cart</h2>
 
             <ul id="cart-items"></ul>
@@ -47,7 +47,21 @@
             <div class="cart-item"></div>
         </div>
 
+        <!-- Side Menu -->
+        <!-- Menu Button -->
+        <button class="menu-btn" id="menuBtn">☰ Menu</button>
 
+        <!-- Side Menu -->
+        <nav class="side-menu" id="sideMenu">
+            <a href="index.html"> Home</a>
+            <a href="gallery.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html"> Services</a>
+            <a href="about.html"> Pages</a>
+
+
+
+        </nav>
 
         <section class="hero">
             <p class="hero-small-text">//Top Notch Bakery</p>
@@ -90,9 +104,7 @@
             <p>Lorem ipsum dolor sit.</p>
         </div>
     </section>
-    <div class="container-for-cart-view-btn">
-        <button id="viewCart">View cart</button>
-    </div>
+
     <section class="cards">
         <div class="card">
             <img src="./images/product/product (1).jpg" alt="">
