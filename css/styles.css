@@ -428,11 +428,12 @@ input:valid~label span {
 
 /* Cart Styles */
 /* //View cart  */
-#viewCart {
+.container-for-cart-view-btn {
   margin-left: 90%;
-  /* position: ; */
+}
+#viewCart {
   background: chocolate;
-  /* z-index: 10001; */
+  z-index: 10001;
   border: 5px solid rgba(207, 207, 207, 0.623);
 }
 .cart {
@@ -504,10 +505,10 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-#added {
+/* #added {
   display: none;
   font-size: 20px;
-}
+} */
 /* 
 .button {
   background-color: #222423;
