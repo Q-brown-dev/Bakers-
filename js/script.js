@@ -19,10 +19,7 @@ window.addEventListener("scroll", () => {
     document.getElementById("header").classList.add("fade-out")
   }, 5000);
 })
-const btnSub = document.querySelector(".btn-sub");
-btnSub.addEventListener("click", () => {
-  alert(" Thank for subcribing👍💖💖")
-})
+
 
 // Cart Animation
 
