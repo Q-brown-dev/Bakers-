@@ -20,11 +20,20 @@ window.addEventListener("scroll", () => {
   }, 5000);
 })
 
+// if (addToCart) {
+//   addToCart.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     const msg = 'added  ✅';
+//     setTimeout(() => {
+//       addToCart.reset();
+//     }, 900);
+//   });
+// }
 
 // Cart Animation
 
 let added = "added  ✅"
-const cartbtn = document.querySelector(".cart-btn");
+const cartbtn = document.querySelector(".cart-btn1");
 const cartbtn2 = document.querySelector(".cart-btn2");
 const cartbtn3 = document.querySelector(".cart-btn3");
 const cartbtn4 = document.querySelector(".cart-btn4");
@@ -32,31 +41,110 @@ const cartbtn5 = document.querySelector(".cart-btn5");
 const cartbtn6 = document.querySelector(".cart-btn6");
 const cartbtn7 = document.querySelector(".cart-btn7");
 const cartbtn8 = document.querySelector(".cart-btn8");
-cartbtn.addEventListener("click", () => {
-  cartbtn.textContent = added;
 
-})
-cartbtn2.addEventListener("click", () => {
-  cartbtn2.textContent = added;
-})
-cartbtn3.addEventListener("click", () => {
-  cartbtn3.textContent = added;
-})
-cartbtn4.addEventListener("click", () => {
-  cartbtn4.textContent = added;
-})
-cartbtn5.addEventListener("click", () => {
-  cartbtn5.textContent = added;
-})
-cartbtn6.addEventListener("click", () => {
-  cartbtn6.textContent = added;
-})
-cartbtn7.addEventListener("click", () => {
-  cartbtn7.textContent = added;
-})
-cartbtn8.addEventListener("click", () => {
-  cartbtn8.textContent = added;
-})
+
+
+if (cartbtn) {
+  cartbtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = document.querySelector('.cart-btn1');
+    msg.textContent = 'added  ✅';
+    setTimeout(() => {
+      msg.textContent = 'Add';
+      cartbtn.reset();
+    }, 900);
+  });
+}
+if (cartbtn2) {
+  cartbtn2.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = document.querySelector('.cart-btn2');
+    msg.textContent = 'added  ✅';
+    setTimeout(() => {
+      msg.textContent = 'Add';
+      cartbtn2.reset();
+    }, 900);
+  });
+}
+if (cartbtn2) {
+  cartbtn2.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = document.querySelector('.cart-btn2');
+    msg.textContent = 'added  ✅';
+    setTimeout(() => {
+      msg.textContent = 'Add';
+      cartbtn2.reset();
+    }, 900);
+  });
+}
+if (cartbtn3) {
+  cartbtn3.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = document.querySelector('.cart-btn3');
+    msg.textContent = 'added  ✅';
+    setTimeout(() => {
+      msg.textContent = 'Add';
+      cartbtn3.reset();
+    }, 900);
+  });
+}
+if (cartbtn4) {
+  cartbtn4.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = document.querySelector('.cart-btn4');
+    msg.textContent = 'added  ✅';
+    setTimeout(() => {
+      msg.textContent = 'Add';
+      cartbtn4.reset();
+    }, 900);
+  });
+}
+if (cartbtn5) {
+  cartbtn5.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = document.querySelector('.cart-btn5');
+    msg.textContent = 'added  ✅';
+    setTimeout(() => {
+      msg.textContent = 'Add';
+      cartbtn5.reset();
+    }, 900);
+  });
+}
+if (cartbtn6) {
+  cartbtn6.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = document.querySelector('.cart-btn6');
+    msg.textContent = 'added  ✅';
+    setTimeout(() => {
+      msg.textContent = 'Add';
+      cartbtn6.reset();
+    }, 900);
+  });
+}
+
+if (cartbtn7) {
+  cartbtn7.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = document.querySelector('.cart-btn7');
+    msg.textContent = 'added  ✅';
+    setTimeout(() => {
+      msg.textContent = 'Add';
+      cartbtn7.reset();
+    }, 900);
+  });
+}
+
+if (cartbtn8) {
+  cartbtn8.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = document.querySelector('.cart-btn8');
+    msg.textContent = 'added  ✅';
+    setTimeout(() => {
+      msg.textContent = 'Add';
+      cartbtn8.reset();
+    }, 900);
+  });
+}
 
 
 const viewCart = document.getElementById("viewCart");
