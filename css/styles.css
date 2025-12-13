@@ -606,6 +606,117 @@ button {
   }
 }
 
+
+.container-for-page {
+  width: 100%;
+  margin-top: 50px;
+  background: url('../🧁/back\(8\).jpg') no-repeat center/cover;
+}
+/* About  page */
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 10%;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  animation: fadeInUp 1s ease;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: tan;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.about-text h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: chocolate;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.about-text p {
+  margin: 15px 0;
+  color: #555;
+}
+
+.about-text span {
+  color: chocolate;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 350px;
+  animation: fadeInRight 1s ease;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Optional button */
+.about-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #ff914d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background: #ff6b00;
+  transform: scale(1.05);
+}
+
+
+
+.side-menu {
+  display: none;
+}
+
+
+
 @media (Max-width: 768px) {
 
   #header {
@@ -672,8 +783,9 @@ button {
     border-radius: 6px;
     transition: background 0.3s;
   }
+
   .container-for-cart-view-btn {
-    
+
     z-index: 2001;
     display: flex;
   }
