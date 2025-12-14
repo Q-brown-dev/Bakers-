@@ -76,6 +76,7 @@ body {
   background: chocolate;
   cursor: pointer;
   box-shadow: 0 0 8px orange;
+  margin-right: 600px;
 }
 
 .cta-btn:active {
