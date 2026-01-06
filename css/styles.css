@@ -25,6 +25,22 @@ body {
   left: 0px;
   right: 0px;
 }
+.nav-container li a[href="index.html"]{
+   padding: 12px 12px 12px 12px;
+  padding-right: 40px;
+  background: #000; 
+  color:  white; 
+  transition: all 0.3s; 
+  
+}
+
+.nav-container li a[href="index.html"]:hover {
+  background-color: white;
+  transition: 0.5s;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+}
 
 .grid {
   display: grid;
@@ -99,22 +115,22 @@ body {
 }
 
 .nav-container li a {
+  margin-left: 25px;
   text-decoration: none;
   color: white;
-  font-size: 19px;
+  font-size: 0.95rem;
+  position: relative;
 }
 
 .nav-container li a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -5px;
-  width: 100%;
+  width: 0;
   height: 2px;
   background: chocolate;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
+  transition: 0.3s;
 }
 
 .nav-container li a:hover {
@@ -122,6 +138,7 @@ body {
 }
 
 .nav-container li a:hover::after {
+  width: 100%;
   transform: scaleX(1);
   transform-origin: left;
 }
@@ -258,16 +275,20 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 120px;
 }
+
 .footer-d {
   padding-top: 30px;
 }
-.footer-d a{
+
+.footer-d a {
   color: white;
 }
+
 .footer-d a:hover {
   color: purple;
   transition: all 0.5s ease;
 }
+
 .muted {
   font-size: 18px;
 }
@@ -463,8 +484,8 @@ input:valid~label span {
   right: -400px;
   width: 300px;
   height: 100vh;
-   background: #443f3f; 
-   /* background: #fff;  */
+  background: #443f3f;
+  /* background: #fff;  */
   box-shadow: -2px 0 10px rgba(240, 240, 240, 0.3);
   padding: 20px;
   overflow-y: auto;
@@ -611,6 +632,7 @@ button {
   margin-top: 50px;
   background: url('../🧁/back\(8\).jpg') no-repeat center/cover;
 }
+
 /* About  page */
 
 .about-section {
