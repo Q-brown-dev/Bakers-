@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecting Code</title>
+    <link rel="stylesheet" href="css/new.css">
+</head>
+
+<body class="body">
+    
+    <div class="cart" id="cart">
+        <div class="cartt">
+            <a href="#">Cart (<span id="cart-count">0 </span>)&#128722;</a>
+        </div>
+        <h2>Your Cart</h2>
+
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="closeCart()">Close cart</button>
+    </div>
+
+    <div class="cart-container" id="cart-container">
+        <div class="cart-item"></div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="container">
+            <h2>Featured Product</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="./images/newimg (1).png" alt="">
+                    <h3>Product 1</h3>
+                    <p class="price">₦25,641</p>
+                    <p class="description">A great product that you'll love. It is reliable and affordable.</p>
+                    <button class="cart-btn"
+                        onclick="addToCart('Product 1', 25641, './images/newimg (1).png')">Add</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="./images/newimg (2).png" alt="">
+                    <h3>Product 2</h3>
+                    <p class="price">₦20,641</p>
+                    <p class="description">A great product that you'll love. It is reliable and affordable.</p>
+                    <button class="cart-btn"
+                        onclick="addToCart('Product 1', 20641, './images/newimg (2).png')">Add</button>
+                </div>
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="./images/newimg (3).png" alt="">
+                    <h3>Product 3</h3>
+                    <p class="price">₦26,641</p>
+                    <p class="description">A great product that you'll love. It is reliable and affordable.</p>
+                    <button class="cart-btn"
+                        onclick="addToCart('Product 1', 26641, '../images/newimg (3).png')">Add</button>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="./images/newimg (4).png" alt="">
+                    <h3>Product 4</h3>
+                    <p class="price">₦27,841</p>
+                    <p class="description">A great product that you'll love. It is reliable and affordable.</p>
+                    <button class="cart-btn"
+                        onclick="addToCart('Product 1', 27841, './images/newimg (4).png')">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/new.js"></script>
+</body>
+
+</html>
