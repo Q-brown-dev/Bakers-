@@ -8,17 +8,28 @@ menuBtn.addEventListener("click", () => {
 
 // Header interaction
 const header = document.getElementById("header");
-if (window.addEventListener("scroll", () => {
-  header.classList.add("active")
-})) {
 
+if (header) {
+  window.addEventListener("scroll", () => {
+    header.classList.add("active");
+  })
 }
+// if (window.addEventListener("scroll", () => {
+  // setTimeout(() => {
+  //   header.classList.remove("active")
+  //   header.classList.add("fade-out");
+  //   // alert("U didi it")
+  // }, 900)
+//   header.classList.add("active")
+// })) {
 
-window.addEventListener("scroll", () => {
-  setTimeout(() => {
-    document.getElementById("header").classList.add("fade-out")
-  }, 5000);
-})
+// }
+
+// window.addEventListener("scroll", () => {
+//   setTimeout(() => {
+//     document.getElementById("header").classList.add("fade-out")
+//   }, 5000);
+// })
 
 // if (addToCart) {
 //   addToCart.addEventListener("click", (e) => {
