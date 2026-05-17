@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
 
   background: linear-gradient(to right, black, rgb(59, 57, 57), black);
@@ -144,7 +149,7 @@ body {
 }
 
 .contact-toggle {
-  margin-left: 230px;
+  margin-left: 20px;
   display: flex;
   background: transparent;
 }
@@ -193,6 +198,8 @@ body {
 
 /* Cards */
 .cards {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -200,9 +207,10 @@ body {
 }
 
 .card img {
-  height: 230px;
-  width: 330px;
+  width: 389px;
+  height: 250px;
   padding: 10px 10px 10px 10px;
+  /* margin-left: 20px; */
 }
 
 .card:hover {
@@ -213,6 +221,7 @@ body {
 .card {
   border-radius: 12px;
   background-color: rgba(65, 64, 64, 0.815);
+  /* padding: 20px 20px 20px 20px; */
 }
 
 .content {
@@ -476,14 +485,14 @@ input:valid~label span {
 
 
 /* Cart Styles */
-/* //View cart  */
 .container-for-cart-view-btn {
-  margin-top: 60px;
-  position: fixed;
+  margin-top: -100px;
   margin-left: 90%;
 }
+/* //View cart  */
 
 #viewCart {
+  position: fixed;
   background: chocolate;
   z-index: 10001;
   border: 5px solid rgba(207, 207, 207, 0.623);
@@ -791,6 +800,10 @@ button {
   margin-bottom: 10px;
 }
 
+.re {
+  display: none;
+}
+
 /* PAGES */
 .pages-grid {
   padding: 60px;
@@ -875,11 +888,12 @@ button {
   }
 
   /* Menu Button */
+  /* Menu Button */
   .menu-btn {
     display: block;
     position: fixed;
     top: 20px;
-    left: 45px;
+    left: 20px;
     z-index: 2001;
     background: #000;
     border: none;
@@ -891,12 +905,32 @@ button {
     transition: background 0.3s;
   }
 
-  .container-for-cart-view-btn,
-  #viewCart {
-    z-index: 1002px;
-    margin-left: 110px;
+  /* Side Menu */
+ 
 
+  /* Menu links */
+  .side-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.4s ease;
   }
+
+  .side-menu.open a {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2000;
+  }
+
+  .side-menu a:hover {
+    color: #00aced;
+  }
+
+
+  
 
 
   /* /////  MAIN\\\\\ */
@@ -956,4 +990,16 @@ button {
   .second-r {
     font-size: 14px;
   }
+
+  .re {
+    display: block;
+    position: fixed;
+  }
+  /* ===========<===>===========
+  ===========View cart<->======= */
+ /* #viewCart { */
+  /* position: fixed; */
+  /* top: 20px; */
+  /* left: 60px; */
+ /* }  */
 }
